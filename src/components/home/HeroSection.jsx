@@ -210,33 +210,7 @@ const HeroSection = () => {
                 </div>
 
                 {/* Back Side */}
-                <div className="absolute inset-0 backface-hidden bg-[url('../../assets/home/card-back.jpg')] bg-cover border border-white/20 rounded-3xl shadow-2xl p-8 flex flex-col justify-center items-center rotate-y-180">
-                  <div className="absolute inset-0 bg-gradient-to-br from-[#0a192f]/90 to-[#0f2c56]/90 -z-10" />
-                  <div className="absolute top-6 left-6 w-12 h-12 rounded-full bg-[#55AAE4]/20 flex items-center justify-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-[#55AAE4]">
-                      <path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8"></path>
-                      <path d="M21 3v5h-5"></path>
-                    </svg>
-                  </div>
 
-                  <div className="text-center mb-8">
-                    <h4 className="text-2xl font-bold text-white mb-3">Simulateur d'économies</h4>
-                    <p className="text-white/90 max-w-md mx-auto">
-                      Calculez vos économies réalisées avant et après notre intervention.
-                    </p>
-                  </div>
-
-                  <button className="relative overflow-hidden group bg-gradient-to-r from-[#55AAE4] to-[#3ac6b8] text-white px-8 py-4 rounded-full font-medium transition-all duration-500 hover:shadow-[0_0_25px_5px_rgba(85,170,228,0.4)]">
-                    <span className="relative z-10 flex items-center gap-2">
-                      <span>Lancer le simulateur</span>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="transition-transform group-hover:translate-x-1">
-                        <path d="M5 12h14"></path>
-                        <path d="m12 5 7 7-7 7"></path>
-                      </svg>
-                    </span>
-                    <span className="absolute inset-0 bg-[radial-gradient(circle_at_center,_white_0%,_transparent_70%)] opacity-0 group-hover:opacity-20 transition-opacity duration-300 -z-10" />
-                  </button>
-                </div>
               </div>
             </div>
           </div>

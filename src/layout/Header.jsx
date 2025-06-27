@@ -35,7 +35,7 @@ const Header = () => {
 
     return (
         <header className={`fixed top-0 w-full z-[400] transition-all duration-300 ${scrolled ? 'bg-[#0f172a]/95 backdrop-blur-md py-4 shadow-lg' : 'bg-transparent py-6'}`}>
-            <div className="max-w-7xl mx-auto px-4 md:px-10">
+            <div className="max-w-7xl mx-auto px-4 md:px-5">
                 <div className="flex items-center justify-between">
                     {/* Mobile Menu Button */}
                     <button
@@ -48,7 +48,7 @@ const Header = () => {
                     {/* Logo - Center */}
                     <div className="z-40">
                         <img
-                            className="h-12 md:h-12 transition-all duration-300"
+                            className="h-12 md:hidden flex md:h-12 transition-all duration-300"
                             src={logo}
                             alt="Company Logo"
                         />
@@ -74,7 +74,7 @@ const Header = () => {
                         </nav>
 
                         {/* Logo */}
-                        <div className="mx-4 flex-shrink-0">
+                        <div className="mx-12 flex-shrink-0 " >
                             <img className="h-12" src={logo} alt="Logo" />
                         </div>
 
@@ -103,7 +103,7 @@ const Header = () => {
                         animate={{ x: 0 }}
                         exit={{ x: '-100%' }}
                         transition={{ duration: 0.4, ease: 'easeInOut' }}
-                        className="fixed top-0 left-0 w-full h-[100vh] bg-[#0f172a]/95 backdrop-blur-md z-40 flex flex-col items-center justify-center space-y-8"
+                        className="fixed top-0 left-0 w-full overflow-y-auto h-[100vh] bg-[#0f172a]/95 backdrop-blur-md z-40 flex flex-col items-center justify-center space-y-8"
                     >
                         {navLinks.map((item, index) => (
                             <Link
